@@ -20,7 +20,5 @@ updates:
 
   - package-ecosystem: "docker"
     directory: "/src/main/docker"
-    # Explicitly specify Dockerfile.jvm if it sits in a custom location or root
-    filename: "Dockerfile.jvm"
     schedule:
       interval: "weekly"
