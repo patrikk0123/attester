@@ -17,3 +17,11 @@ updates:
       interval: "weekly"
     cooldown:
       default-days: 7
+
+  - package-ecosystem: "docker"
+    directory: "/"
+    # Explicitly specify Dockerfile.jvm if it sits in a custom location or root
+    target-files:
+      - "src/main/docker/Dockerfile.jvm"
+    schedule:
+      interval: "weekly"
